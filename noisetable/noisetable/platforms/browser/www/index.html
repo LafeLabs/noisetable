@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <title>Blank App</title>
+        <title>Noise Table</title>
     </head>
     <body>        
         
@@ -16,7 +16,7 @@
         </table>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript">
-    app.initialize();
+
     noisetable = document.getElementById("noisetable");
     Tnoise = [1,4,8,15,20,40,60,77,100,120,150,200,300,400,500,750,1000,2000,3000,10000,100000];
     NF = [];
@@ -37,6 +37,11 @@
     
 </script>
         <style>
+body{
+    background-color:black;
+    color:#00ff00;
+    font-family:Futura;
+}
 h1{
     text-align:center;
 }
@@ -58,6 +63,11 @@ td{
 .rightcell{
     text-align:left;
     padding-left:10%;
+}
+#noisetable{
+    position:absolute;
+    top:10%;
+
 }
 </style>
     </body>
